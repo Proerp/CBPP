@@ -64,6 +64,7 @@
                 .ServerOperation(true)
                 .Aggregates(a => a.Add(x => x.TotalQuantity).Sum())
                 .Aggregates(a => a.Add(x => x.TotalQuantityFailure).Sum())
+                .Aggregates(a => a.Add(x => x.TotalQuantityShortage).Sum())
                 .Aggregates(a => a.Add(x => x.TotalSwarfs).Sum())
                 
                 )
